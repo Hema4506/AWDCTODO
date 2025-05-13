@@ -45,7 +45,7 @@ export default function Edittask() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    const api = 'http://localhost:4000/api/edit_task/'+edit_taskid
+    const api = 'http://https://awdctodo.vercel.app//api/edit_task/'+edit_taskid
         axios.put(api,data).then((response) => {
             console.log(response.data)
             if(response.status==200){
