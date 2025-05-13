@@ -28,7 +28,7 @@ export default function Edittask() {
 
 
 
-      let api = 'http://localhost:4000/api/get_task_data/'+edit_taskid
+      let api = 'http://https://awdctodo.vercel.app//api/get_task_data/'+edit_taskid
         useEffect(() => {
         axios.get(api).then((response) => {
             console.log(response.data.task_data)
